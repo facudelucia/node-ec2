@@ -15,3 +15,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Say Hello Mona it's Monday"
+        run: echo "${{secrets.AWS_BUCKET_NAME}}. ${{secrets.AWS_BUCKET_REGION}}"
