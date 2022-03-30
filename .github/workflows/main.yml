@@ -1,0 +1,11 @@
+name: env_tutorial
+## Triggers the workflow on when there is a push, or 
+## pull request on the main branch
+on: [pull_request, push] 
+
+env:
+  ## Sets environment variable
+  AWS_BUCKET_NAME: ${{secrets.AWS_BUCKET_NAME}}
+  AWS_BUCKET_REGION: ${{secrets.AWS_BUCKET_REGION}}
+  AWS_ACCESS_KEY: ${{secrets.AWS_ACCESS_KEY}}
+  AWS_SECRET_KEY: ${{secrets.AWS_SECRET_KEY}} 
